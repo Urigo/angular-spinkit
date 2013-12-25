@@ -1,0 +1,29 @@
+{
+  "name": "angular-spinkit",
+  "version": "0.0.1",
+  "authors": [
+    "Urigo <uri.goldshtein@gmail.com>"
+  ],
+  "description": "SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS",
+  "main": "ngSpinKit.js",
+  "keywords": [
+    "spinner",
+    "SpinKit",
+    "spinners",
+    "AngularJS",
+    "ngSpinKit"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Urigo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0.6"
+  }
+}
