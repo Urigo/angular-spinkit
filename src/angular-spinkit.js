@@ -1,12 +1,12 @@
 /**
- * ngSpinKit module
+ * angular-spinkit module
  * SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
  *
  * Author: Urigo - https://github.com/Urigo
  */
 'use strict';
 
-angular.module('ngSpinKit',
+angular.module('angularSpinkit',
   [
     'ngRotatingPlaneSpinner',
     'ngDoubleBounceSpinner',
@@ -20,49 +20,49 @@ angular.module('ngSpinKit',
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/rotatingPlaneSpinner.html'
+    templateUrl: 'src/templates/rotatingPlaneSpinner.html'
   };
 });
 
 angular.module('ngDoubleBounceSpinner', []).directive('doubleBounceSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/doubleBounceSpinner.html'
+    templateUrl: 'src/templates/doubleBounceSpinner.html'
   };
 });
 
 angular.module('ngWaveSpinner', []).directive('waveSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/waveSpinner.html'
+    templateUrl: 'src/templates/waveSpinner.html'
   };
 });
 
 angular.module('ngWanderingCubesSpinner', []).directive('wanderingCubesSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/wanderingCubesSpinner.html'
+    templateUrl: 'src/templates/wanderingCubesSpinner.html'
   };
 });
 
 angular.module('ngPulseSpinner', []).directive('pulseSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/pulseSpinner.html'
+    templateUrl: 'src/templates/pulseSpinner.html'
   };
 });
 
 angular.module('ngChasingDotsSpinner', []).directive('chasingDotsSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/chasingDotsSpinner.html'
+    templateUrl: 'src/templates/chasingDotsSpinner.html'
   };
 });
 
 angular.module('ngCircleSpinner', []).directive('circleSpinner', function () {
   return {
     restrict: 'E',
-    templateUrl: 'infra/views/circleSpinner.html'
+    templateUrl: 'src/templates/circleSpinner.html'
   };
 });
 

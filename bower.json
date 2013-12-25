@@ -1,11 +1,11 @@
 {
   "name": "angular-spinkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "Urigo <uri.goldshtein@gmail.com>"
   ],
   "description": "SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS",
-  "main": "ngSpinKit.js",
+  "main": "angular-spinkit.js",
   "keywords": [
     "spinner",
     "SpinKit",
