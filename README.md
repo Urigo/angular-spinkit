@@ -5,24 +5,27 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 
 
 ## Usage
-1. Add ng-csv.min.js to your main file (index.html)
-
-2. Set `ngCsv` as a dependency in your module
+1. Add angular-spinkit.min.js to your main file (index.html)
   ```javascript
-  var myapp = angular.module('myapp', ['ngCsv'])
+  <script src="bower_components/angular-spinkit/build/angular-spinkit.min.js"></script>
   ```
 
-3. Add ng-csv directive to the wanted element, example:
-  ```html
-  <button type="button" ng-csv="getArray()" filename="test.csv">Export</button>
+2. Set `angularSpinkit` as a dependency in your module
+  ```javascript
+  var myapp = angular.module('myapp', ['angularSpinkit'])
   ```
 
-##### New! - Now accepts a header row as parameter
-Just provide csv-header attribute. 
+3. Add rotating-plane-spinner, double-bounce-spinner, wave-spinner, wandering-cubes-spinner, pulse-spinner, chasing-dots-spinner or circle-spinner directive to the wanted element, example:
   ```html
-  <button type="button" ng-csv="getArray()" csv-header="['Field A', 'Field B', 'Field C']" filename="test.csv">Export</button>
+  <rotating-plane-spinner></rotating-plane-spinner>
+<double-bounce-spinner></double-bounce-spinner>
+<wave-spinner></wave-spinner>
+<wandering-cubes-spinner></wandering-cubes-spinner>
+<pulse-spinner></pulse-spinner>
+<chasing-dots-spinner></chasing-dots-spinner>
+<circle-spinner></circle-spinner>
   ```
 
 
 ## Example
-You can check out this live example here: http://jsfiddle.net/asafdav/dR6Nb/
+You can check out this live example here: http://jsfiddle.net/638AA/1/
