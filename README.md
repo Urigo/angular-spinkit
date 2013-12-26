@@ -30,9 +30,7 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 <chasing-dots-spinner></chasing-dots-spinner>
 <circle-spinner></circle-spinner>
   ```
-
+5. Add all your requests and ideas in the issues area!
 
 ## Example
 You can check out this live example here: http://jsfiddle.net/Urigo/638AA/5/
-
-5. Add all your requests and ideas in the issues area!
