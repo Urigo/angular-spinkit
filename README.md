@@ -34,3 +34,5 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 
 ## Example
 You can check out this live example here: http://jsfiddle.net/638AA/3/
+
+5. Add all your requests and ideas in the issues area!
