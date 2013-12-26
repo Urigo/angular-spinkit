@@ -23,17 +23,11 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 4. Add rotating-plane-spinner, double-bounce-spinner, wave-spinner, wandering-cubes-spinner, pulse-spinner, chasing-dots-spinner or circle-spinner directive to the wanted element, example:
   ```html
   <rotating-plane-spinner></rotating-plane-spinner>
-
 <double-bounce-spinner></double-bounce-spinner>
-
 <wave-spinner></wave-spinner>
-
 <wandering-cubes-spinner></wandering-cubes-spinner>
-
 <pulse-spinner></pulse-spinner>
-
 <chasing-dots-spinner></chasing-dots-spinner>
-
 <circle-spinner></circle-spinner>
   ```
 
