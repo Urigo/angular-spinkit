@@ -10,8 +10,9 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
   "angular-spinkit": "v0.0.2.1"
   ```
 
-2. Add angular-spinkit.min.js to your main file (index.html)
-  ```javascript
+2. Add angular-spinkit.min.js and angular-spinkit.min.css to your main file (index.html)
+  ```html
+  <link rel="stylesheet" href="bower_components/angular-spinkit/build/angular-spinkit.min.css">
   <script src="bower_components/angular-spinkit/build/angular-spinkit.min.js"></script>
   ```
 
