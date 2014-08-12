@@ -23,6 +23,16 @@ module.exports = function(grunt) {
         src: 'build/<%= pkg.name %>.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
+    },
+    cssmin: {
+      minify: {
+        options: {
+          banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */'
+        },
+        files: {
+          'build/angular-spinkit.min.css': ['src/angular-spinkit.css']
+        }
+      }
     }
   });
 
@@ -30,8 +40,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-angular-templates');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('default', ['ngtemplates','concat:dist', 'uglify']);
+  grunt.registerTask('default', ['ngtemplates','concat:dist', 'uglify', 'cssmin']);
 
 };
