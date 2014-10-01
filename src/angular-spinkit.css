@@ -273,7 +273,8 @@
   position: relative;
 }
 
-.cube1, .cube2 {
+.wandering-cubes-spinner:before, .wandering-cubes-spinner:after {
+  content: '';
   background-color: #333;
   width: 10px;
   height: 10px;
@@ -285,15 +286,15 @@
   animation: cubemove 1.8s infinite ease-in-out;
 }
 
-.cube2 {
+.wandering-cubes-spinner:after {
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
 @-webkit-keyframes cubemove {
-  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
-  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
-  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  25% { -webkit-transform: translateX(22px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(22px) translateY(22px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(22px) rotate(-270deg) scale(0.5) }
   100% { -webkit-transform: rotate(-360deg) }
 }
 
@@ -302,6 +303,7 @@
     transform: translateX(42px) rotate(-90deg) scale(0.5);
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
   } 50% {
+      /* Hack to make FF rotate in the right direction */
       transform: translateX(42px) translateY(42px) rotate(-179deg);
       -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
     } 50.1% {
