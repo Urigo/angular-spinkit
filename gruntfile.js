@@ -6,7 +6,10 @@ module.exports = function(grunt) {
     ngtemplates: {
       angularSpinkit: {
         src: ['src/templates/**.html'],
-        dest: 'build/templates.js'
+        dest: 'build/templates.js',
+        options: {
+          module: 'angular-spinkit'
+        }
       }
     },
     concat: {
