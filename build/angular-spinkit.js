@@ -17,7 +17,8 @@ angular.module('angularSpinkit',
     'ngCircleSpinner',
     'ngThreeBounceSpinner',
     'ngCubeGridSpinner',
-    'ngWordPressSpinner'
+    'ngWordPressSpinner',
+    'ngFadingCircleSpinner'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
@@ -90,6 +91,13 @@ angular.module('ngWordPressSpinner', []).directive('wordPressSpinner', function 
   };
 });
 
+angular.module('ngFadingCircleSpinner', []).directive('fadingCircleSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/fadingCircleSpinner.html'
+  };
+});
+
 
 
 angular.module('angularSpinkit').run(['$templateCache', function($templateCache) {
@@ -141,6 +149,24 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
     "  <div class=\"double-bounce1\"></div>\n" +
     "  <div class=\"double-bounce2\"></div>\n" +
     "</div>\n"
+  );
+
+
+  $templateCache.put('src/templates/fadingCircleSpinner.html',
+    "<div class=\"fading-circle-spinner\">\n" +
+    "  <div class=\"circle1 circle\"></div>\n" +
+    "  <div class=\"circle2 circle\"></div>\n" +
+    "  <div class=\"circle3 circle\"></div>\n" +
+    "  <div class=\"circle4 circle\"></div>\n" +
+    "  <div class=\"circle5 circle\"></div>\n" +
+    "  <div class=\"circle6 circle\"></div>\n" +
+    "  <div class=\"circle7 circle\"></div>\n" +
+    "  <div class=\"circle8 circle\"></div>\n" +
+    "  <div class=\"circle9 circle\"></div>\n" +
+    "  <div class=\"circle10 circle\"></div>\n" +
+    "  <div class=\"circle11 circle\"></div>\n" +
+    "  <div class=\"circle12 circle\"></div>\n" +
+    "</div>"
   );
 
 

@@ -33,6 +33,7 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 <three-bounce-spinner></three-bounce-spinner>
 <cube-grid-spinner></cube-grid-spinner>
 <word-press-spinner></word-press-spinner>
+<fading-circle-spinner></fading-circle-spinner>
   ```
 5. Add all your requests and ideas in the issues area or send us a pull request!
 
