@@ -15,7 +15,8 @@ angular.module('angularSpinkit',
     'ngPulseSpinner',
     'ngChasingDotsSpinner',
     'ngCircleSpinner',
-    'ngThreeBounceSpinner'
+    'ngThreeBounceSpinner',
+    'ngCubeGridSpinner'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
@@ -74,6 +75,13 @@ angular.module('ngThreeBounceSpinner', []).directive('threeBounceSpinner', funct
   };
 });
 
+angular.module('ngCubeGridSpinner', []).directive('cubeGridSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/cubeGridSpinner.html'
+  };
+});
+
 
 
 angular.module('angularSpinkit').run(['$templateCache', function($templateCache) {
@@ -102,6 +110,21 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
     "  <div class=\"circle11 circle\"></div>\n" +
     "  <div class=\"circle12 circle\"></div>\n" +
     "</div>\n"
+  );
+
+
+  $templateCache.put('src/templates/cubeGridSpinner.html',
+    "<div class=\"cube-grid-spinner\">\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "</div>"
   );
 
 

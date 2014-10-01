@@ -15,7 +15,8 @@ angular.module('angularSpinkit',
     'ngPulseSpinner',
     'ngChasingDotsSpinner',
     'ngCircleSpinner',
-    'ngThreeBounceSpinner'
+    'ngThreeBounceSpinner',
+    'ngCubeGridSpinner'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
@@ -71,6 +72,13 @@ angular.module('ngThreeBounceSpinner', []).directive('threeBounceSpinner', funct
   return {
     restrict: 'E',
     templateUrl: 'src/templates/threeBounceSpinner.html'
+  };
+});
+
+angular.module('ngCubeGridSpinner', []).directive('cubeGridSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/cubeGridSpinner.html'
   };
 });
 

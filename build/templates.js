@@ -27,6 +27,21 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
   );
 
 
+  $templateCache.put('src/templates/cubeGridSpinner.html',
+    "<div class=\"cube-grid-spinner\">\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "</div>"
+  );
+
+
   $templateCache.put('src/templates/doubleBounceSpinner.html',
     "<div class=\"double-bounce-spinner\">\n" +
     "  <div class=\"double-bounce1\"></div>\n" +

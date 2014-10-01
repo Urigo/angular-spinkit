@@ -31,6 +31,7 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 <chasing-dots-spinner></chasing-dots-spinner>
 <circle-spinner></circle-spinner>
 <three-bounce-spinner></three-bounce-spinner>
+<cube-grid-spinner></cube-grid-spinner>
   ```
 5. Add all your requests and ideas in the issues area or send us a pull request!
 
