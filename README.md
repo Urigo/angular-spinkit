@@ -7,7 +7,7 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 ## Usage
 1. Add angular-spinkit to your bower.json file
   ```javascript
-  "angular-spinkit": "v0.0.2.1"
+  "angular-spinkit": "0.3.0"
   ```
 
 2. Add angular-spinkit.min.js and angular-spinkit.min.css to your main file (index.html)
