@@ -38,4 +38,4 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 5. Add all your requests and ideas in the issues area or send us a pull request!
 
 ## Example
-You can check out this live example here: http://jsfiddle.net/Urigo/638AA/17/
+You can check out this live example here: http://jsfiddle.net/Urigo/638AA/18/
