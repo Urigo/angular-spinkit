@@ -1,4 +1,4 @@
-angular.module('angularSpinkit').run(['$templateCache', function($templateCache) {
+angular.module('angular-spinkit').run(['$templateCache', function($templateCache) {
   'use strict';
 
   $templateCache.put('src/templates/chasingDotsSpinner.html',
