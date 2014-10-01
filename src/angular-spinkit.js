@@ -14,7 +14,8 @@ angular.module('angularSpinkit',
     'ngWanderingCubesSpinner',
     'ngPulseSpinner',
     'ngChasingDotsSpinner',
-    'ngCircleSpinner'
+    'ngCircleSpinner',
+    'ngThreeBounceSpinner'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
