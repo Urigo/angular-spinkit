@@ -11,25 +11,34 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
 
   $templateCache.put('src/templates/circleSpinner.html',
     "<div class=\"spinning-dots-spinner\">\n" +
-    "  <div class=\"spinner-container container1\">\n" +
-    "    <div class=\"circle1\"></div>\n" +
-    "    <div class=\"circle2\"></div>\n" +
-    "    <div class=\"circle3\"></div>\n" +
-    "    <div class=\"circle4\"></div>\n" +
-    "  </div>\n" +
-    "  <div class=\"spinner-container container2\">\n" +
-    "    <div class=\"circle1\"></div>\n" +
-    "    <div class=\"circle2\"></div>\n" +
-    "    <div class=\"circle3\"></div>\n" +
-    "    <div class=\"circle4\"></div>\n" +
-    "  </div>\n" +
-    "  <div class=\"spinner-container container3\">\n" +
-    "    <div class=\"circle1\"></div>\n" +
-    "    <div class=\"circle2\"></div>\n" +
-    "    <div class=\"circle3\"></div>\n" +
-    "    <div class=\"circle4\"></div>\n" +
-    "  </div>\n" +
+    "  <div class=\"circle1 circle\"></div>\n" +
+    "  <div class=\"circle2 circle\"></div>\n" +
+    "  <div class=\"circle3 circle\"></div>\n" +
+    "  <div class=\"circle4 circle\"></div>\n" +
+    "  <div class=\"circle5 circle\"></div>\n" +
+    "  <div class=\"circle6 circle\"></div>\n" +
+    "  <div class=\"circle7 circle\"></div>\n" +
+    "  <div class=\"circle8 circle\"></div>\n" +
+    "  <div class=\"circle9 circle\"></div>\n" +
+    "  <div class=\"circle10 circle\"></div>\n" +
+    "  <div class=\"circle11 circle\"></div>\n" +
+    "  <div class=\"circle12 circle\"></div>\n" +
     "</div>\n"
+  );
+
+
+  $templateCache.put('src/templates/cubeGridSpinner.html',
+    "<div class=\"cube-grid-spinner\">\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "  <div class=\"cube\"></div>\n" +
+    "</div>"
   );
 
 
@@ -38,6 +47,24 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
     "  <div class=\"double-bounce1\"></div>\n" +
     "  <div class=\"double-bounce2\"></div>\n" +
     "</div>\n"
+  );
+
+
+  $templateCache.put('src/templates/fadingCircleSpinner.html',
+    "<div class=\"fading-circle-spinner\">\n" +
+    "  <div class=\"circle1 circle\"></div>\n" +
+    "  <div class=\"circle2 circle\"></div>\n" +
+    "  <div class=\"circle3 circle\"></div>\n" +
+    "  <div class=\"circle4 circle\"></div>\n" +
+    "  <div class=\"circle5 circle\"></div>\n" +
+    "  <div class=\"circle6 circle\"></div>\n" +
+    "  <div class=\"circle7 circle\"></div>\n" +
+    "  <div class=\"circle8 circle\"></div>\n" +
+    "  <div class=\"circle9 circle\"></div>\n" +
+    "  <div class=\"circle10 circle\"></div>\n" +
+    "  <div class=\"circle11 circle\"></div>\n" +
+    "  <div class=\"circle12 circle\"></div>\n" +
+    "</div>"
   );
 
 
@@ -73,6 +100,13 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
     "  <div class=\"rect4\"></div>\n" +
     "  <div class=\"rect5\"></div>\n" +
     "</div>\n"
+  );
+
+
+  $templateCache.put('src/templates/wordPressSpinner.html',
+    "<div class=\"word-press-spinner\">\n" +
+    "  <span class=\"inner-circle\"></span>\n" +
+    "</div>"
   );
 
 }]);
