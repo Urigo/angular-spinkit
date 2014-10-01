@@ -51,6 +51,15 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
   );
 
 
+  $templateCache.put('src/templates/threeBounceSpinner.html',
+    "<div class=\"three-bounce-spinner\">\n" +
+    "  <div class=\"bounce1\"></div>\n" +
+    "  <div class=\"bounce2\"></div>\n" +
+    "  <div class=\"bounce3\"></div>\n" +
+    "</div>"
+  );
+
+
   $templateCache.put('src/templates/wanderingCubesSpinner.html',
     "<div class=\"wandering-cubes-spinner\"></div>\n"
   );

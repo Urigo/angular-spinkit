@@ -66,4 +66,11 @@ angular.module('ngCircleSpinner', []).directive('circleSpinner', function () {
   };
 });
 
+angular.module('ngThreeBounceSpinner', []).directive('threeBounceSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/threeBounceSpinner.html'
+  };
+});
+
 

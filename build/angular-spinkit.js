@@ -66,6 +66,13 @@ angular.module('ngCircleSpinner', []).directive('circleSpinner', function () {
   };
 });
 
+angular.module('ngThreeBounceSpinner', []).directive('threeBounceSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/threeBounceSpinner.html'
+  };
+});
+
 
 
 angular.module('angularSpinkit').run(['$templateCache', function($templateCache) {
@@ -118,6 +125,15 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
 
   $templateCache.put('src/templates/rotatingPlaneSpinner.html',
     "<div class=\"three-dots-row-spinner\"></div>\n"
+  );
+
+
+  $templateCache.put('src/templates/threeBounceSpinner.html',
+    "<div class=\"three-bounce-spinner\">\n" +
+    "  <div class=\"bounce1\"></div>\n" +
+    "  <div class=\"bounce2\"></div>\n" +
+    "  <div class=\"bounce3\"></div>\n" +
+    "</div>"
   );
 
 
