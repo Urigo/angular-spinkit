@@ -16,9 +16,9 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
   <script src="bower_components/angular-spinkit/build/angular-spinkit.min.js"></script>
   ```
 
-3. Set `angularSpinkit` as a dependency in your module
+3. Set `angular-spinkit` as a dependency in your module
   ```javascript
-  var myapp = angular.module('myapp', ['angularSpinkit'])
+  var myapp = angular.module('myapp', ['angular-spinkit'])
   ```
 
 4. Add rotating-plane-spinner, double-bounce-spinner, wave-spinner, wandering-cubes-spinner, pulse-spinner, chasing-dots-spinner or circle-spinner directive to the wanted element, example:

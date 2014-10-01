@@ -6,7 +6,7 @@
  */
 'use strict';
 
-angular.module('angularSpinkit',
+angular.module('angular-spinkit',
   [
     'ngRotatingPlaneSpinner',
     'ngDoubleBounceSpinner',
