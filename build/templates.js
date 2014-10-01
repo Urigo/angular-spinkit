@@ -84,4 +84,11 @@ angular.module('angularSpinkit').run(['$templateCache', function($templateCache)
     "</div>\n"
   );
 
+
+  $templateCache.put('src/templates/wordPressSpinner.html',
+    "<div class=\"word-press-spinner\">\n" +
+    "  <span class=\"inner-circle\"></span>\n" +
+    "</div>"
+  );
+
 }]);

@@ -16,7 +16,8 @@ angular.module('angularSpinkit',
     'ngChasingDotsSpinner',
     'ngCircleSpinner',
     'ngThreeBounceSpinner',
-    'ngCubeGridSpinner'
+    'ngCubeGridSpinner',
+    'ngWordPressSpinner'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
@@ -79,6 +80,13 @@ angular.module('ngCubeGridSpinner', []).directive('cubeGridSpinner', function ()
   return {
     restrict: 'E',
     templateUrl: 'src/templates/cubeGridSpinner.html'
+  };
+});
+
+angular.module('ngWordPressSpinner', []).directive('wordPressSpinner', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'src/templates/wordPressSpinner.html'
   };
 });
 
