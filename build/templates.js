@@ -52,18 +52,18 @@ angular.module('angular-spinkit').run(['$templateCache', function($templateCache
 
   $templateCache.put('src/templates/fadingCircleSpinner.html',
     "<div class=\"fading-circle-spinner\">\n" +
-    "  <div class=\"circle1 circle\"></div>\n" +
-    "  <div class=\"circle2 circle\"></div>\n" +
-    "  <div class=\"circle3 circle\"></div>\n" +
-    "  <div class=\"circle4 circle\"></div>\n" +
-    "  <div class=\"circle5 circle\"></div>\n" +
-    "  <div class=\"circle6 circle\"></div>\n" +
-    "  <div class=\"circle7 circle\"></div>\n" +
-    "  <div class=\"circle8 circle\"></div>\n" +
-    "  <div class=\"circle9 circle\"></div>\n" +
-    "  <div class=\"circle10 circle\"></div>\n" +
-    "  <div class=\"circle11 circle\"></div>\n" +
-    "  <div class=\"circle12 circle\"></div>\n" +
+    "  <div class=\"fading-circle1 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle2 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle3 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle4 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle5 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle6 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle7 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle8 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle9 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle10 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle11 fading-circle\"></div>\n" +
+    "  <div class=\"fading-circle12 fading-circle\"></div>\n" +
     "</div>"
   );
 
