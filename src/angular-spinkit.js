@@ -18,7 +18,8 @@ angular.module('angular-spinkit',
     'ngThreeBounceSpinner',
     'ngCubeGridSpinner',
     'ngWordPressSpinner',
-    'ngFadingCircleSpinner'
+    'ngFadingCircleSpinner',
+    'ngSpinkitImagePreloader'
   ]);
 
 angular.module('ngRotatingPlaneSpinner', []).directive('rotatingPlaneSpinner', function () {
@@ -98,4 +99,51 @@ angular.module('ngFadingCircleSpinner', []).directive('fadingCircleSpinner', fun
   };
 });
 
+angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader', ['$compile', '$injector', function ($compile, $injector) {
+  return {
+    restrict: 'A',
+    scope: {
+      ngSrc: '@',
+      spinkitImagePreloader: '@'
+    },
+    link: function(scope, element, attrs) {
+      var spinnerWrapper,
+          spinner;
 
+      // Check for the existence of the spinkit-directive
+      if(!$injector.has(attrs.$normalize(scope.spinkitImagePreloader) + 'Directive'))
+        return;
+
+      // Create and configure DOM-spinner-elements
+      spinnerWrapper = angular.element('<div/>').addClass('spinner-wrapper'),
+      spinner = $compile('<' + scope.spinkitImagePreloader + '/>')(scope);
+      spinnerWrapper.append(spinner);
+      spinnerWrapper.css('overflow', 'hidden');
+
+      element.after(spinnerWrapper);
+
+      // Copy dimensions (inline and attributes) from the image to the spinner wrapper
+      if(element.css('width'))
+        spinnerWrapper.css('width', element.css('width'));
+
+      if(attrs.width)
+        spinnerWrapper.css('width', attrs.width + 'px');
+
+      if(element.css('height'))
+        spinnerWrapper.css('height', element.css('height'));
+
+      if(attrs.height)
+        spinnerWrapper.css('height', attrs.height + 'px');
+
+      element.on('load', function () {
+        spinnerWrapper.css('display', 'none');
+        element.css('display', 'block');
+      });
+
+      scope.$watch('ngSrc', function () {
+        spinnerWrapper.css('display', 'block');
+        element.css('display', 'none');
+      });
+    }
+  };
+}]);
