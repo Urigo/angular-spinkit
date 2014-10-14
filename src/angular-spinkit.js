@@ -104,10 +104,12 @@ angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader',
     restrict: 'A',
     scope: {
       ngSrc: '@',
-      spinkitImagePreloader: '@'
+      spinkitImagePreloader: '@',
+      spinkitImagePreloaderClass: '@'
     },
     link: function(scope, element, attrs) {
       var spinnerWrapper,
+          spinnerWrapperClass = scope.spinkitImagePreloaderClass || 'spinner-wrapper',
           spinner;
 
       // Check for the existence of the spinkit-directive
@@ -115,7 +117,7 @@ angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader',
         return;
 
       // Create and configure DOM-spinner-elements
-      spinnerWrapper = angular.element('<div/>').addClass('spinner-wrapper'),
+      spinnerWrapper = angular.element('<div/>').addClass(spinnerWrapperClass),
       spinner = $compile('<' + scope.spinkitImagePreloader + '/>')(scope);
       spinnerWrapper.append(spinner);
       spinnerWrapper.css('overflow', 'hidden');
