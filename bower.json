@@ -11,7 +11,11 @@
     "SpinKit",
     "spinners",
     "AngularJS",
-    "ngSpinKit"
+    "ngSpinKit",
+    "preloader",
+    "image spinner",
+    "image preloader",
+    "loading indicator"
   ],
   "license": "MIT",
   "homepage": "https://github.com/Urigo",
@@ -24,5 +28,6 @@
     "tests"
   ],
   "dependencies": {
+    "angular": "*"
   }
 }
