@@ -1,6 +1,6 @@
 {
   "name": "angular-spinkit",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-angular-templates": "~0.5.1",
