@@ -45,6 +45,11 @@ SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
   <!-- Also feel free to set width/height and other properties through CSS just configure your own css-class using the 'spinkit-image-preloader-class' attribute (or use css-class by default "spinner-wrapper") -->
   <img alt='Your description' ng-src='http://example/img.jpg' spinkit-image-preloader='cube-grid-spinner' spinkit-image-preloader-class='rotating-plane-spinner' />
   ```
+  You can listen to the image loaded event.
+   ```javascript
+  // in controller
+  $scope.$on('angular-spinkit:imageLoaded');
+  ```
 
 6. Add all your requests and ideas in the issues area or send us a pull request!
 
