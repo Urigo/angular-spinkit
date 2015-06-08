@@ -99,7 +99,7 @@ angular.module('ngFadingCircleSpinner', []).directive('fadingCircleSpinner', fun
   };
 });
 
-angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader', ['$compile', '$injector', function ($compile, $injector) {
+angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader', ['$compile', '$injector', '$rootScope', function ($compile, $injector, $rootScope) {
   return {
     restrict: 'A',
     scope: {
@@ -140,6 +140,7 @@ angular.module('ngSpinkitImagePreloader', []).directive('spinkitImagePreloader',
       element.on('load', function () {
         spinnerWrapper.css('display', 'none');
         element.css('display', 'block');
+        $rootScope.$broadcast('angular-spinkit:imageLoaded');
       });
 
       scope.$watch('ngSrc', function () {
