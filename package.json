@@ -1,5 +1,6 @@
 {
   "name": "angular-spinkit",
+  "main": "build/angular-spinkit.js",
   "version": "0.3.3",
   "devDependencies": {
     "grunt": "~0.4.2",
