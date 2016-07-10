@@ -3,6 +3,10 @@ angular-spinkit
 
 SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 
+## ng2-spin-kit - SpinKit spinners for AngularJS 2.x
+
+https://github.com/WoltersKluwerPL/ng2-spin-kit
+
 
 ## Usage
 1. Install with bower:
