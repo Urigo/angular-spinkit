@@ -3,12 +3,12 @@
   "main": "build/angular-spinkit.js",
   "version": "0.3.4",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-angular-templates": "~0.5.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-cssmin": "^0.10.0",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-uglify": "~0.2.2"
+    "grunt": "~1.0.1",
+    "grunt-angular-templates": "~1.1.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt-contrib-uglify": "~3.0.1"
   }
 }
