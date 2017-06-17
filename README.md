@@ -1,6 +1,8 @@
 angular-spinkit
 ===============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Urigo/angular-spinkit.svg)](https://greenkeeper.io/)
+
 SpinKit (https://github.com/tobiasahlin/SpinKit) spinners for AngularJS
 
 ## ng2-spin-kit - SpinKit spinners for AngularJS 2.x
