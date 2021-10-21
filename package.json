@@ -2,6 +2,10 @@
   "name": "angular-spinkit",
   "main": "build/angular-spinkit.js",
   "version": "0.3.4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Urigo/angular-spinkit.git"
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-angular-templates": "~0.5.1",
